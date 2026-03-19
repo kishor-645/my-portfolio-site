@@ -1,6 +1,6 @@
 'use client'
 
-import { Github, Linkedin, Mail, Twitter } from 'lucide-react'
+import { Github, Linkedin, Mail, Briefcase } from 'lucide-react'
 
 const footerLinks = [
   { name: 'About', href: '#about' },
@@ -12,10 +12,10 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { icon: Github, href: 'https://github.com', label: 'GitHub' },
-  { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-  { icon: Mail, href: 'mailto:kishor.vaishanav@gmail.com', label: 'Email' },
+  { icon: Github, href: 'https://github.com/kishor-645', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/kishor-vaishnav-8b4545242', label: 'LinkedIn' },
+  { icon: Briefcase, href: 'https://www.upwork.com/freelancers/~01f53ad1fc6158c055', label: 'Upwork' },
+  { icon: Mail, href: 'mailto:kishorvaishanav645@gmail.com', label: 'Email' },
 ]
 
 export function Footer() {

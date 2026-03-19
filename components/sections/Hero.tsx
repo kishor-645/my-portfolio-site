@@ -1,17 +1,17 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Download, Send } from 'lucide-react'
+import { ArrowRight, Send } from 'lucide-react'
 import { Button } from '@/components/ui/Button'
 import { ParticleBackground } from '@/components/animation/ParticleBackground'
 
 const techIcons = [
-  { name: 'Azure', color: '#0078D4', position: [-4, 2, 0] as [number, number, number] },
-  { name: 'AWS', color: '#FF9900', position: [4, 2.5, 0] as [number, number, number] },
-  { name: 'Kubernetes', color: '#326CE5', position: [-3.5, -1, 0] as [number, number, number] },
-  { name: 'Terraform', color: '#7B42BC', position: [3.5, -1.5, 0] as [number, number, number] },
-  { name: 'Docker', color: '#2496ED', position: [-5, 0.5, 0] as [number, number, number] },
-  { name: 'K8s', color: '#326CE5', position: [5, 0, 0] as [number, number, number] },
+  { name: 'Azure', color: '#0078D4', position: [-4, 2, 0] as [number, number, number], iconSrc: '/icon/azure.svg' },
+  { name: 'AWS', color: '#FF9900', position: [4, 2.5, 0] as [number, number, number], iconSrc: '/icon/aws.svg' },
+  { name: 'Kubernetes', color: '#326CE5', position: [-3.5, -1, 0] as [number, number, number], iconSrc: '/icon/kubernets.svg' },
+  { name: 'Terraform', color: '#7B42BC', position: [3.5, -1.5, 0] as [number, number, number], iconSrc: '/icon/terraform.png' },
+  { name: 'Docker', color: '#2496ED', position: [-5, 0.5, 0] as [number, number, number], iconSrc: '/icon/docker.svg' },
+  { name: 'GitHub', color: '#ffffff', position: [5, 0, 0] as [number, number, number], iconSrc: '/icon/github.svg' },
 ]
 
 const containerVariants = {
@@ -55,7 +55,7 @@ export function Hero() {
           className="flex flex-col items-center gap-6"
         >
           {/* Badge */}
-          <motion.div variants={itemVariants}>
+          <motion.div variants={itemVariants} className="flex justify-center">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-accent-cyan border border-accent-cyan/20">
               <span className="w-2 h-2 rounded-full bg-accent-green animate-pulse" />
               Available for opportunities
@@ -106,14 +106,12 @@ export function Hero() {
               View Projects
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="secondary" className="group">
-              <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
-              Download Resume
-            </Button>
-            <Button size="lg" variant="ghost" className="group">
-              <Send size={18} className="group-hover:-translate-y-0.5 transition-transform" />
-              Contact Me
-            </Button>
+            <a href="#contact">
+              <Button size="lg" variant="ghost" className="group">
+                <Send size={18} className="group-hover:-translate-y-0.5 transition-transform" />
+                Contact Me
+              </Button>
+            </a>
           </motion.div>
 
           {/* Scroll Indicator */}
@@ -161,9 +159,7 @@ export function Hero() {
               className="w-16 h-16 rounded-xl glass flex items-center justify-center border border-primary-700 hover:border-accent-cyan/30 transition-all cursor-default"
               title={tech.name}
             >
-              <span className="text-xs font-bold" style={{ color: tech.color }}>
-                {tech.name}
-              </span>
+              <img src={tech.iconSrc} alt={tech.name} width={32} height={32} className="object-contain" />
             </div>
           </motion.div>
         ))}

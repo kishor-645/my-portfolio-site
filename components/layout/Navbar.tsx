@@ -84,18 +84,15 @@ export function Navbar() {
 
         {/* Social Links - Desktop */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-accent-cyan transition-colors">
+          <a href="https://github.com/kishor-645" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-accent-cyan transition-colors">
             <Github size={20} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-accent-cyan transition-colors">
+          <a href="https://linkedin.com/in/kishor-vaishnav-8b4545242" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-accent-cyan transition-colors">
             <Linkedin size={20} />
           </a>
           <a href="mailto:kishor@example.com" className="text-primary-400 hover:text-accent-cyan transition-colors">
             <Mail size={20} />
           </a>
-          <Button size="sm" glow="cyan">
-            Resume
-          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -133,10 +130,10 @@ export function Navbar() {
                 </a>
               ))}
               <div className="flex items-center gap-4 pt-4 border-t border-primary-700">
-                <a href="https://github.com" className="text-primary-400 hover:text-accent-cyan">
+                <a href="https://github.com/kishor-645" className="text-primary-400 hover:text-accent-cyan">
                   <Github size={24} />
                 </a>
-                <a href="https://linkedin.com" className="text-primary-400 hover:text-accent-cyan">
+                <a href="https://linkedin.com/in/kishor-vaishnav-8b4545242" className="text-primary-400 hover:text-accent-cyan">
                   <Linkedin size={24} />
                 </a>
                 <a href="mailto:kishor@example.com" className="text-primary-400 hover:text-accent-cyan">

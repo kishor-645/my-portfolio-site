@@ -4,11 +4,12 @@ import { motion } from 'framer-motion'
 import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { Badge } from '@/components/ui/Badge'
 import { Card } from '@/components/ui/Card'
+import { Cloud, Cog, Box, Shield, Activity, Bot } from 'lucide-react'
 
 const skillCategories = [
   {
     title: 'Cloud',
-    icon: '☁️',
+    icon: Cloud,
     color: 'cyan' as const,
     skills: [
       { name: 'Azure', level: 95, isPrimary: true },
@@ -18,7 +19,7 @@ const skillCategories = [
   },
   {
     title: 'DevOps',
-    icon: '⚙️',
+    icon: Cog,
     color: 'purple' as const,
     skills: [
       { name: 'Azure DevOps', level: 95, isPrimary: true },
@@ -29,7 +30,7 @@ const skillCategories = [
   },
   {
     title: 'Containers',
-    icon: '📦',
+    icon: Box,
     color: 'green' as const,
     skills: [
       { name: 'Docker', level: 95, isPrimary: true },
@@ -40,8 +41,8 @@ const skillCategories = [
   },
   {
     title: 'DevSecOps',
-    icon: '🔐',
-    color: 'red' as const,
+    icon: Shield,
+    color: 'purple' as const,
     skills: [
       { name: 'Trivy', level: 90, isPrimary: false },
       { name: 'Gitleaks', level: 88, isPrimary: false },
@@ -52,7 +53,7 @@ const skillCategories = [
   },
   {
     title: 'Observability',
-    icon: '📊',
+    icon: Activity,
     color: 'blue' as const,
     skills: [
       { name: 'Prometheus', level: 92, isPrimary: false },
@@ -65,7 +66,7 @@ const skillCategories = [
   },
   {
     title: 'MLOps / AI',
-    icon: '🤖',
+    icon: Bot,
     color: 'purple' as const,
     skills: [
       { name: 'Azure ML', level: 88, isPrimary: false },
@@ -126,7 +127,7 @@ export function Skills() {
               >
                 {/* Category Header */}
                 <div className="flex items-center gap-3 mb-5">
-                  <span className="text-2xl">{category.icon}</span>
+                  <category.icon size={24} className="text-primary-400" />
                   <h3 className="text-xl font-heading font-bold text-white">
                     {category.title}
                   </h3>

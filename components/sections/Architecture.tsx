@@ -6,7 +6,6 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation'
 import { Badge } from '@/components/ui/Badge'
 import { Card } from '@/components/ui/Card'
 import {
-  Azure,
   Cloud,
   Shield,
   Database,
@@ -78,7 +77,6 @@ const iconMap: Record<string, any> = {
   Globe,
   Shield,
   Activity,
-  Azure,
   Cloud,
   Database,
   Lock,
