@@ -1,0 +1,20 @@
+
+Find in logs
+CtrlF
+Running build in Washington, D.C., USA (East) – iad1
+Build machine configuration: 2 cores, 8 GB
+Cloning github.com/kishor-645/my-portfolio-site (Branch: main, Commit: 0cfc0f9)
+Cloning completed: 377.000ms
+Restored build cache from previous deployment (9xG5oWuwGvSDKi849ut6T1hCEitu)
+Running "vercel build"
+Vercel CLI 50.32.4
+Installing dependencies...
+added 6 packages, removed 12 packages, and changed 16 packages in 2s
+31 packages are looking for funding
+  run `npm fund` for details
+Running "npm run build"
+> kishor-portfolio@0.1.0 build
+
+
+
+site link : https://project-epluq-dfrpkz36v-kishorshadhu645-1953s-projects.vercel.app/
