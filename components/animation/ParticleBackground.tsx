@@ -40,13 +40,13 @@ function ParticleField() {
     <points ref={meshRef}>
       <bufferGeometry>
         <bufferAttribute
-          attach="attributes-position"
+          attach="position"
           count={particleCount}
           array={positions}
           itemSize={3}
         />
         <bufferAttribute
-          attach="attributes-color"
+          attach="color"
           count={particleCount}
           array={colors}
           itemSize={3}

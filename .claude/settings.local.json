@@ -5,7 +5,10 @@
       "Bash(npm run:*)",
       "Bash(mkdir:*)",
       "Bash(ls:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(npm install:*)",
+      "Bash(npm view:*)",
+      "Bash(npm list:*)"
     ]
   }
 }
